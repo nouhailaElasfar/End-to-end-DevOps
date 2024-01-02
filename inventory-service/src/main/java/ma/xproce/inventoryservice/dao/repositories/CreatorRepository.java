@@ -9,4 +9,5 @@ public interface CreatorRepository extends JpaRepository<Creator,Long> {
     Creator findByName(String name);
     List<Creator> findAll();
     public void deleteCreatorByName(String name);
+    public Creator saveCreator(Creator creator);
 }
